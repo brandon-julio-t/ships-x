@@ -5,7 +5,7 @@ import Button from '../components/button';
 import Layout from '../layout';
 import Ship from '../models/ship';
 
-function List() {
+export default function List() {
   const { loading, error, data } = useQuery<{ ships: Ship[] }>(QUERY);
   return (
     <Layout title="SpaceX Ships 🚢" loading={loading} error={error?.message}>
@@ -32,5 +32,3 @@ const QUERY = gql`
     }
   }
 `;
-
-export default List;

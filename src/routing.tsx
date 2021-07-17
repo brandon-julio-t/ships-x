@@ -5,8 +5,7 @@ import Favorites from './pages/favorites';
 import List from './pages/list';
 import Search from './pages/search';
 
-function Routing() {
-  return (
+function Routing() {return (
     <BrowserRouter>
       <Switch>
         <Route path="/" exact>

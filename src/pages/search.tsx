@@ -4,7 +4,7 @@ import Ship from '../models/ship';
 import CardShip from '../components/card-ship';
 import Layout from '../layout';
 
-function Search() {
+export default function Search() {
   const { loading, error, data } = useQuery<{ ships: Ship[] }>(QUERY);
 
   const [proxy, setProxy] = useState([]);
@@ -54,5 +54,3 @@ const QUERY = gql`
     }
   }
 `;
-
-export default Search;

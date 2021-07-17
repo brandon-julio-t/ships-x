@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Button from '../components/button';
 import Container from '../components/container';
 
 export default function Navbar() {

@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import Container from '../components/container';
 import Error from '../components/error';
 import Loading from '../components/loading';
